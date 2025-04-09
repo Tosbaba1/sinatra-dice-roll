@@ -39,6 +39,7 @@ GEM
     logger (1.7.0)
     method_source (1.1.0)
     minitest (5.25.5)
+    multi_json (1.15.0)
     multipart-post (2.4.1)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
@@ -70,6 +71,12 @@ GEM
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.0.6)
       tilt (~> 2.0)
+    sinatra-contrib (3.0.6)
+      multi_json
+      mustermann (~> 3.0)
+      rack-protection (= 3.0.6)
+      sinatra (= 3.0.6)
+      tilt (~> 2.0)
     tilt (2.6.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -88,6 +95,7 @@ DEPENDENCIES
   rackup (~> 1.0.1)
   ruby-openai
   sinatra (~> 3.0.6)
+  sinatra-contrib
 
 BUNDLED WITH
    2.4.6
